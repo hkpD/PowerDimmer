@@ -65,7 +65,7 @@ namespace PowerDimmer
                 settings.DimmingEnabled = !settings.DimmingEnabled;
             });
 
-            HotkeyManager.Current.AddOrReplace("DimToggleHotkey", Key.D, ModifierKeys.Windows | ModifierKeys.Shift, true, (s, e) =>
+            HotkeyManager.Current.AddOrReplace("DimToggleHotkey", Key.D, ModifierKeys.Windows | ModifierKeys.Alt, true, (s, e) =>
             {
                 if (!settings.DimmingEnabled)
                 {
